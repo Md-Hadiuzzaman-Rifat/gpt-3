@@ -2,9 +2,9 @@ button {
   cursor: pointer;
   color: #fff;
   background-color: #ff4820;
-  width: 152px;
-  height: 58px;
+  width: 100px;
+  height: 48px;
   border-radius: 5px;
   margin: 0 20px;
-  font-size: 18px;
+  font-size: 1rem;
 }

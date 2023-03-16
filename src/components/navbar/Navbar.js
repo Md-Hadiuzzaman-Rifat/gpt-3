@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { ImCross } from "react-icons/im";
-import { RiMenu3Line } from "react-icons/ri";
+import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import gpt3 from "../../assets/GPT-3.svg";
+import "../../style/global.css";
 import Button from "./../button/Button";
 import "./Navbar.css";
 
@@ -9,19 +9,20 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
  
   return (
-    <div className="gpt3_navbar">
+    <div className="gpt3_navbar paddings">
       <div className="gpt3_navbar-links">
 
         <div className="gpt3_navbar-links_logo">
           <img src={gpt3} alt="" />
+          {/* <h2>GPT-3</h2> */}
         </div>
 
         <div className="gpt3_navbar-links_container">
           <p>
             <a href="#home">Home</a>
           </p>
-          <p style={{ color: "white" }}>
-            <a style={{ textDecoration: "none" }} href="#wgpt3">
+          <p>
+            <a href="#wgpt3">
               What is GPT3
             </a>
           </p>
@@ -43,7 +44,7 @@ const Navbar = () => {
 
         <div className="gpt3_navbar-menu">
           {toggleMenu ? (
-            <ImCross
+            <RiCloseLine
               color="#fff"
               size={26}
               onClick={() => setToggleMenu(false)}
@@ -56,8 +57,8 @@ const Navbar = () => {
             />
           )}
           {toggleMenu && (
-            <div className="gpt2_navbar-menu_container scale-up-center">
-              <div className="gpt2_navbar-menu_container-links">
+            <div className="gpt3_navbar-menu_container scale-up-center">
+              <div className="gpt3_navbar-menu_container-links">
                 <p>
                   <a href="#home">Home</a>
                 </p>

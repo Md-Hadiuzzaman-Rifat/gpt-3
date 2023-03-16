@@ -1,0 +1,23 @@
+.innerWidth {
+  width: 100%;
+  margin: auto;
+}
+@media screen and(max-width:1240px) {
+  .innerWidth {
+    width: 1240px;
+    margin: auto;
+  }
+}
+.paddings {
+  padding: 2rem 4rem;
+}
+@media screen and (max-width: 768px) {
+  .paddings {
+    padding: 2rem 2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .paddings {
+    padding: 2rem 0.5rem;
+  }
+}

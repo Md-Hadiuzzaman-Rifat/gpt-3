@@ -1,41 +1,76 @@
 .header {
-  padding: 2rem 6rem;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
 }
 .header__content {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  width: 65%;
 }
-.header__image {
-  width: 50%;
+.header__image img {
+  width: 30rem;
 }
-
 .header__content-header {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 62px;
-  line-height: 75px;
   letter-spacing: -0.04em;
 }
+@media (max-width: 768px) {
+  .header__content-header {
+    font-size: 48px;
+  }
+}
+@media (max-width: 640px) {
+  .header__content-header {
+    font-size: 32px;
+  }
+}
+
 .header__content-paragraph {
   color: var(--color-text);
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  width: 75%;
+  width: 65%;
 }
 
 .header__content-input {
   font-size: 1.2rem;
-  width: 30rem;
-  height: 4rem;
+  width: 20rem;
+  height: 3.5rem;
   background: #052d56;
   border: none;
   border-radius: 5px 0px 0px 5px;
   padding: 5px 20px;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .header__content-input {
+    font-size: 1.2rem;
+    width: 20rem;
+    height: 2.8rem;
+    background: #052d56;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px 20px;
+    color: white;
+  }
+}
+.header__btn {
+  height: 3.5rem;
+  margin-left: 0;
+}
+@media (max-width: 640px) {
+  .header__btn {
+    height: 2.8rem;
+  }
 }
 .header__content-input:focus {
   border: none;
@@ -48,4 +83,40 @@
 .header__content-subscription {
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
+}
+@media (max-width: 640px) {
+  .header__content-subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2.5rem;
+  }
+}
+.header__content-input-image img {
+  height: 2rem;
+}
+.header__content-input-text p {
+  font-size: 0.7rem;
+}
+.header__content-input__group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 }

@@ -1,0 +1,12 @@
+Container Folder
+=================
+export {default as Blog} from "blog/Blog.js"
+app.js
+=======
+import {Blog} from "./container"
+
+
+For Gradient: angry Tool
+For Animation: animesta
+
+write function instead navigation component

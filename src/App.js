@@ -1,13 +1,18 @@
 import "./App.css";
-import { Brand, CTA, Navbar } from "./components";
+import {
+  // Brand, 
+  CTA,
+  Navbar
+} from "./components";
 import {
   Blog,
-  Features,
+  // Features,
   Footer,
   Header,
   Possibility,
   WhatGPT3
 } from "./containers";
+import "./style/global.css";
 
 function App() {
   return (
@@ -16,9 +21,9 @@ function App() {
         <Navbar></Navbar>
         <Header></Header>
       </div>
-      <Brand></Brand>
+      {/* <Brand></Brand> */}
       <WhatGPT3></WhatGPT3>
-      <Features></Features>
+      {/* <Features></Features> */}
       <Possibility></Possibility>
       <CTA></CTA>
       <Blog></Blog>

@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background-color: var(--color-bg);
@@ -51,11 +52,11 @@ a {
 }
 
 .section__padding {
-  padding: 4rem 6rem;
+  padding: 4rem 4rem;
 }
 
 .section__margin {
-  margin: 4rem 6rem;
+  margin: 4rem 4rem;
 }
 
 .scale-up-center {

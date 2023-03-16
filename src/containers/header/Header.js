@@ -1,12 +1,12 @@
 import React from "react";
-import group from "../../assets//Group 81.png";
-import illustration from "../../assets/Illustration.png";
+import ai from "../../assets/ai.png";
+import group from "../../assets/Group 81.png";
 import Button from "../../components/button/Button";
 import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div style={{ width: "100vw" }} className="header innerWidth paddings">
       <div className="header__content">
         <h1 className="header__content-header gradient__text">
           Let Build Something Amazing with GPT-3 OpenAI
@@ -24,18 +24,22 @@ const Header = () => {
             placeholder="Your Email Address"
           />
 
-          <Button style={{height:"4rem"}}>Get Started</Button>
+          <Button className="header__btn">Get Started</Button>
+        </div>
+        
+        <div className="header__content-input__group">
+          <div className="header__content-input-image">
+            <img src={group} alt="" />
+          </div>
+          <div className="header__content-input-text">
+            <p>1,600 people requested access a visit in last 24 hours</p>
+          </div>
         </div>
 
-        <div className="header__content-input-image">
-          <img src={group} alt="" />
-        </div>
-        <div className="header__content-input-text">
-          <p>1,600 people requested access a visit in last 24 hours</p>
-        </div>
+
       </div>
       <div className="header__image">
-        <img src={illustration} alt="" />
+        <img src={ai} alt="" />
       </div>
     </div>
   );
