@@ -2,7 +2,7 @@ import "./App.css";
 import { Brand, CTA, Navbar } from "./components";
 import {
   Blog,
-  // Features,
+  Feature,
   Footer,
   Header,
   Possibility,
@@ -19,7 +19,7 @@ function App() {
       </div>
       <Brand></Brand>
       <WhatGPT3></WhatGPT3>
-      {/* <Features></Features> */}
+      <Feature></Feature>
       <Possibility></Possibility>
       <CTA></CTA>
       <Blog></Blog>

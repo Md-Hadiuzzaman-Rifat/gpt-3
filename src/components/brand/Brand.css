@@ -1,12 +1,14 @@
 .brand {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  margin: 50px 0;
 }
 img {
-  flex-grow: 0;
-  flex-shrink: 1;
+  /* flex-grow: 0; */
+  flex-shrink: 0;
   width: 7rem;
 }

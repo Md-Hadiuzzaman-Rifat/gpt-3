@@ -1,0 +1,18 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.feature {
+  color: white;
+  font-family: var(--font-family);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.feature-straightLine {
+  width: 50px;
+  height: 4px;
+  background-image: var(--gradient-bar);
+  border: 10px;
+  margin-bottom: 1.75rem;
+}
