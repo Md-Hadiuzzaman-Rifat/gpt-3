@@ -50,7 +50,7 @@
 .gpt3-TopSection {
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: flex-start;
   gap: 3rem;
 }
 .gpt3-TopSection-feature {
