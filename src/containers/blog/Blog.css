@@ -1,1 +1,33 @@
- 
+.blog {
+  margin-bottom: 5rem;
+}
+.blog-heading {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 62px;
+  letter-spacing: -0.04em;
+  width: 75%;
+  margin-bottom: 4rem;
+}
+@media (max-width: 768px) {
+  .blog-heading {
+    font-size: 48px;
+  }
+}
+@media (max-width: 640px) {
+  .blog-heading {
+    font-size: 32px;
+  }
+}
+.blog-content {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: end; */
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+.blog-content__item {
+  width: 350px;
+}

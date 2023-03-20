@@ -27,48 +27,66 @@ const Features = () => {
     },
   ];
   return (
-    <div className="features innerWidth paddings">
+    <div className="innerWidth paddings">
+      <div className="features">
         {/* // top section  */}
-      <div className="features-top">
-        <div className="features-top__heading">
-          <h1 className="gradient__text">The Future is Now and You Just Need To Realize It. Step into Future
-          Today & Make it Happen.</h1>
-          <p>Request Early Access to Get Started</p>
+        <div className="features-top">
+          <div className="features-top__heading">
+            <h1 className="gradient__text">
+              The Future is Now and You Just Need To Realize It. Step into
+              Future Today & Make it Happen.
+            </h1>
+            <p>Request Early Access to Get Started</p>
+          </div>
+          <div className="features-top-description">
+            {info.map((property) => {
+              return (
+                <div className="features-top-description__section">
+                  <Feature
+                    size="1.25rem"
+                    className="features-top-description__section__header"
+                    heading={property.heading}
+                  ></Feature>
+                  <p>{property.description}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <div className="features-top-description">
-          {info.map((property) => {
-            return (
-              <div className="features-top-description__section">
-                <Feature className="features-top-description__section__header" heading={property.heading}></Feature>
-                <p>{property.description}</p>
-              </div>
-            );
-          })}
+        {/* //middle section  */}
+        <div className="features-middle">
+          <div className="features-middle__image">
+            <img src={img} alt="" />
+          </div>
+
+          <div className="features-middle__description">
+            <p>Request Early Access to Get Started</p>
+            <h1 className="gradient__text">
+              The possibilities are beyond your imagination
+            </h1>
+            <p>
+              {" "}
+              Yet bed any for travelling assistance indulgence unpleasing. Not
+              thoughts all exercise blessing. Indulgence way everything joy
+              alteration boisterous the attachment. Party we years to order
+              allow asked of.
+            </p>
+            <p>Request Early Access to Get Started</p>
+          </div>
+        </div>
+        {/* //bottom section  */}
+        <div className="features-bottom">
+          <div className="features-bottom__text">
+            <p>Request Early Access to Get Started</p>
+            <h2>Register today & start exploring the endless possiblities.</h2>
+          </div>
+          <div className="features-bottom-button">
+            <p>Get Started</p>
+          </div>
         </div>
       </div>
-      {/* //middle section  */}
-       <div className="features-middle">
-        <img src={img} alt="" />
-        <div className="features-middle__description">
-        <p>Request Early Access to Get Started</p>
-        <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
-        <p> Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.  Party we years to order allow asked of.</p>
-          <p>Request Early Access to Get Started</p>
-        </div>
-      </div> 
-          {/* //bottom section  */}
-      <div className="features-bottom">
-        <div className="features-bottom__text">
-          <p>Request Early Access to Get Started</p>
-          <h2>Register today & start exploring the endless possiblities.</h2>
-        </div>
-        <div className="features-bottom-button">
-          <p>Get Started</p>
-        </div>
-      </div> 
     </div>
   );
 };
 
 export default Features;
-

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="footer innerWidth paddings">
       <div className="footer-header">
-        <h1 className="gradient__text footer-content">Do you want to step in to the future before others</h1>
+        <h1 className="gradient__text footer-content">Do you want to step into the future before others</h1>
 
         <p className="footer-btn">Request Early Access</p>
         <div className="footer-section">

@@ -1,0 +1,24 @@
+.news {
+  display: flex;
+  flex-flow: column wrap;
+}
+.news-photo img {
+  width: 100%;
+  height: 200px;
+}
+.news-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 1rem;
+  background-color: #042c54;
+  align-items: stretch;
+}
+.news-description h3,
+small {
+  font-family: var(--font-family);
+  color: white;
+  margin: 1rem;
+}

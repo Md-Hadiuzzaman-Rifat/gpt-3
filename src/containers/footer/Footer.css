@@ -45,6 +45,7 @@ li {
   font-family: var(--font-family);
   font-size: 0.75rem;
   margin: 2rem 0;
+  cursor: pointer;
 }
 .footer-section-links h2 {
   color: white;
