@@ -12,9 +12,8 @@ const Navbar = () => {
     <div className="gpt3_navbar paddings">
       <div className="gpt3_navbar-links">
 
-        <div className="gpt3_navbar-links_logo">
+        <div className="gpt3_navbar-links_logo"> 
           <img src={gpt3} alt="" />
-          {/* <h2>GPT-3</h2> */}
         </div>
 
         <div className="gpt3_navbar-links_container">
@@ -57,7 +56,8 @@ const Navbar = () => {
             />
           )}
           {toggleMenu && (
-            <div className="gpt3_navbar-menu_container scale-up-center">
+            <div className="gpt3_navbar-menu_container ">
+              {/* scale-up-center */}
               <div className="gpt3_navbar-menu_container-links">
                 <p>
                   <a href="#home">Home</a>

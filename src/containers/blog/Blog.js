@@ -1,5 +1,5 @@
 import React from "react";
-import News from '../../components/News/News';
+import News from "../../components/News/News";
 
 import img1 from "../../assets/Rectangle 22-1.png";
 import img2 from "../../assets/Rectangle 22-2.png";
@@ -16,21 +16,36 @@ const Blog = () => {
       </h1>
       <div className="blog-content">
         <div className="blog-content__item">
-        <News img={img4} heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"></News>
+          <News
+            img={img4}
+            heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"
+          ></News>
         </div>
         <div className="blog-content__item">
-        <News img={img1} heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"></News>
+          <News
+            img={img1}
+            heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"
+          ></News>
         </div>
         <div className="blog-content__item">
-        <News img={img2} heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"></News>
+          <News
+            img={img2}
+            heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"
+          ></News>
         </div>
         <div className="blog-content__item">
-        <News img={img3} heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"></News>
+          <News
+            img={img3}
+            heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"
+          ></News>
         </div>
         <div className="blog-content__item">
-        <News img={img} heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"></News>
+          <News
+            img={img}
+            heading="GPT-3 and Open  AI is the future. Let us exlore how it is?"
+          ></News>
         </div>
-     </div> 
+      </div>
     </div>
   );
 };
