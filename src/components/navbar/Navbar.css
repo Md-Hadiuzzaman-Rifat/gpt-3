@@ -51,9 +51,6 @@ p {
   }
 }
 .gpt3_navbar-menu_container-links {
-  /* position: relative;
-  right: 0rem;
-  top: 6rem; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
